@@ -1,0 +1,42 @@
+@mixin psuedo(
+  $loc: before,
+  $pos: absolute,
+  $top: 0,
+  $right: auto,
+  $bottom: auto,
+  $left: 0
+) {
+  position: relative;
+  &::#{$loc} {
+    position: $pos;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    content: "";
+    @content;
+  }
+}
+
+@mixin underline($width: 1.5rem, $clr: white, $offset: 10%) {
+  @include psuedo(after, absolute, calc(100% + $offset), auto, auto, 50%) {
+    width: $width;
+    height: 4px;
+    background-color: $clr;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@mixin fadeIn($duration: 0.7s) {
+  animation: fade-in $duration cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

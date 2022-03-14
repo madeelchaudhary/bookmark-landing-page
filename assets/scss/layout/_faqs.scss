@@ -1,0 +1,50 @@
+@use "../abstracts/" as a;
+
+.section-faqs .btn {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.faqs {
+  max-width: 47ch;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.faq {
+  padding: 1.35em 0;
+  border-bottom: 0.085em solid rgba($color: hsl(229, 8%, 60%), $alpha: 0.3);
+}
+
+.faq-header {
+  cursor: pointer;
+}
+
+.faq-opener {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.faq-content {
+  padding: 0.5em 0;
+  padding-top: 1.5em;
+  display: none;
+}
+
+.active {
+  .faq-content {
+    display: block;
+    @include a.fadeIn(0.5s);
+  }
+
+  .faq-opener {
+    transform: rotate(180deg);
+    filter: hue-rotate(90deg);
+  }
+}
+
+.faq-title {
+  font-size: calc(var(--fs-300) * 1.1);
+  opacity: 0.8;
+}

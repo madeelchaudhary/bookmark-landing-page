@@ -1,0 +1,60 @@
+@use "../abstracts" as a;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fx-column {
+  flex-direction: column;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+$gapCount: 1;
+@for $i from 3 through 8 {
+  .gap-#{$gapCount} {
+    gap: calc(var(--fs-#{$i}00) * 1.35);
+  }
+  $gapCount: $gapCount + 1;
+}
+
+$columns: 12;
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex-basis: calc(100% / ($columns / $i));
+  }
+}
+
+@include a.mq(md) {
+  $gapCount: 1;
+  @for $i from 3 through 8 {
+    .gap-md-#{$gapCount} {
+      gap: calc(var(--fs-#{$i}00) * 1.35);
+    }
+    $gapCount: $gapCount + 1;
+  }
+
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      flex-basis: calc(100% / ($columns / $i));
+    }
+  }
+}

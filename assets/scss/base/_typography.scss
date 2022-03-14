@@ -1,0 +1,44 @@
+body {
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+  font-weight: var(--fw-normal);
+  color: var(--clr-neutral);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  line-height: 1.2;
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-800);
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-700);
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-600);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  margin-top: 0.45em;
+}

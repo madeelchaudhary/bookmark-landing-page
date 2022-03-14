@@ -1,0 +1,57 @@
+@use "../abstracts" as a;
+.footer {
+  padding: 3rem 0 2.25rem;
+  background-color: var(--clr-accent);
+
+  .grid {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+}
+
+.nav-secondary {
+  text-align: center;
+
+  .nav-list {
+    gap: 1.25rem;
+    font-size: calc(var(--fs-300) * 1.05);
+  }
+  .nav-list-item {
+    padding: 0;
+    border: none;
+  }
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+
+  svg {
+    fill: var(--clr-light);
+  }
+
+  a:hover > svg,
+  a:focus > svg {
+    fill: var(--clr-secondary);
+  }
+}
+
+@include a.mq(md) {
+  .footer {
+    .grid {
+      gap: 2.65rem;
+      grid-template-columns: auto auto 1fr auto;
+    }
+
+    .g-item:last-child {
+      grid-column: -1;
+    }
+  }
+  .nav-secondary {
+    .nav-list {
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+  }
+}

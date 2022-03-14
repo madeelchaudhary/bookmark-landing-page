@@ -1,0 +1,120 @@
+@use "../abstracts/" as a;
+
+.section-tabs {
+  overflow: hidden;
+}
+
+.tab-navigator-list {
+  margin-top: 2.85rem;
+  margin-bottom: 5rem;
+}
+
+.tab-navigator-item {
+  border-top: 1px solid rgba($color: hsl(229, 8%, 60%), $alpha: 0.25);
+}
+
+.tab-navigator-item:last-child {
+  border-bottom: 1px solid rgba($color: hsl(229, 8%, 60%), $alpha: 0.25);
+}
+.tab-navigator-item {
+  flex-basis: 250px;
+  text-align: center;
+}
+
+.tab-link {
+  display: inline-block;
+  padding: 1em 2.25em;
+  text-decoration: none;
+  font-size: calc(var(--fs-500) / 1.065);
+  color: inherit;
+
+  @include a.underline(calc(90% - 4em), var(--clr-secondary), -4px);
+  &.active {
+    color: var(--clr-accent);
+    &::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+  }
+}
+
+.tab {
+  display: none;
+
+  &.active {
+    display: block;
+    @include a.fadeIn;
+  }
+  .btn {
+    display: none;
+  }
+}
+
+.tab-img-wrapper {
+  @include a.psuedo(after, absolute, 18%, auto, auto, -45%) {
+    z-index: -1;
+    height: 95%;
+    width: 124%;
+    border-radius: 20rem;
+    background-color: var(--clr-primary);
+  }
+}
+
+.tab-content {
+  margin-top: 3.45rem;
+  text-align: center;
+}
+
+.tab-title {
+  margin-bottom: 0.65em;
+}
+
+@include a.mq(md) {
+  .tab-navigator-list {
+    max-width: max-content;
+    margin-top: 4rem;
+    margin-inline: auto;
+    border-bottom: 1px solid rgba($color: hsl(229, 8%, 60%), $alpha: 0.25);
+
+    .tab-navigator-item {
+      flex-basis: 0;
+      border: none;
+    }
+  }
+
+  .tab {
+    .row {
+      flex-wrap: nowrap;
+      gap: max(var(--fs-800), 8%);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.85em;
+    }
+  }
+  .tab-content {
+    align-self: center;
+    max-width: 39ch;
+    text-align: left;
+  }
+
+  .tab-link {
+    width: max-content;
+    padding: 1.1em 2.75em;
+    font-size: var(--fs-400);
+    &::after {
+      width: 100%;
+    }
+  }
+
+  .tab-img-wrapper {
+    &::after {
+      top: 23%;
+      height: 88%;
+      width: 100vw;
+      left: -65vw;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

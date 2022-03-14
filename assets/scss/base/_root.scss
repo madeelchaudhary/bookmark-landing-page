@@ -1,0 +1,48 @@
+@use "../abstracts" as a;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1em;
+  scrollbar-color: hsla(231, 69%, 60%, 0.815) hsla(229, 8%, 60%, 0.568);
+}
+
+::-webkit-scrollbar {
+  width: 2vw;
+  max-width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1em;
+  background-color: hsla(229, 8%, 60%, 0.568);
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: hsla(231, 69%, 60%, 0.815);
+}
+
+:root {
+  --cm-width: 1280px;
+  --c-width: 88%;
+
+  --fw-normal: 400;
+  --fw-bold: 500;
+
+  @each $color, $value in a.$clr {
+    --clr-#{$color}: #{$value};
+  }
+
+  @each $screen-size, $font-size in a.$type {
+    @if $screen-size == sm {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+      @include a.mq(md) {
+        @each $size, $value in $font-size {
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+}

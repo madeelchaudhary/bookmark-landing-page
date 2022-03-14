@@ -1,0 +1,51 @@
+@use "../abstracts" as a;
+
+.platforms-card {
+  margin-top: 2.5rem;
+  .card {
+    flex-basis: 300px;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.65rem hsla(231, 69%, 60%, 0.151),
+      0 0.25rem 0.5rem hsla(0, 0%, 14%, 0.027);
+  }
+
+  .card-body {
+    padding: 4rem 1.5rem 2.5rem;
+  }
+
+  .card-icon {
+    margin: 0 auto;
+  }
+
+  .card-footer {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    margin-top: 1.5em;
+    margin-bottom: 0.35em;
+    font-size: calc(var(--fs-500) * 1.05);
+  }
+
+  .card-note {
+    font-size: 0.95em;
+    opacity: 0.9;
+  }
+  .divider {
+    width: 100%;
+  }
+}
+
+@include a.mq(lg) {
+  .platforms-card {
+    margin-top: 0.5rem;
+    $count: 2;
+    @for $i from 1 through 2 {
+      .card:nth-child(#{$count}) {
+        margin-top: calc($i * 4rem);
+      }
+      $count: $count + 1;
+    }
+  }
+}

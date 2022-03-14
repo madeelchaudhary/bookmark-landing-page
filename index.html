@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+  <title>Bookmark landing page</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/scripts/app.js" defer></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-space-between align-center">
+        <div class="logo-wrapper">
+          <a href="/" class="logo-link" aria-label="Bookmark 
+          Brand Logo">
+            <img src="assets/images/logo-bookmark.svg" alt="Bookmark Brand Logo" class="logo">
+            <div class="logo-dark">
+              <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                    fill="#fff" fill-rule="nonzero" />
+                  <g>
+                    <circle fill="#fff" cx="12.5" cy="12.5" r="12.5" />
+                    <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+                      fill="hsla(229, 31%, 21%, 0.95)" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <button type="button" class="nav-toggler">
+          <img src="assets/images/icon-hamburger.svg" alt="Open Primary Navigation" class="hamburger">
+          <img src="assets/images/icon-close.svg" alt="Close Primary Navigation" class="nav-close">
+        </button>
+        <nav class="nav nav-primary" aria-label="Primary">
+          <ul class="nav-list list-none">
+            <li class="nav-list-item"><a href="#features">Features</a></li>
+            <li class="nav-list-item"><a href="#faqs">Pricing</a></li>
+            <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            <li class="nav-list-item nav-list-btn"><a href="#" class="btn btn-secondary">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero">
+      <div class="container">
+        <div class="row gap-6">
+          <div class="col-12 col-md-6 hero-content">
+            <h1 class="title">
+              A Simple Bookmark Manager
+            </h1>
+            <p class="subtitle">
+              A clean and simple interface to organize your favourite websites. Open a new
+              browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <div class="btn-group row gap-2">
+              <a href="#" class="btn btn-primary">Get it on Chrome</a>
+              <a href="#" class="btn btn-default">Get it on Firefox</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 hero-img-wrapper">
+            <img src="assets/images/illustration-hero.svg" alt="" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-features" id="features">
+      <div class="container">
+        <div class="row fx-column align-center gap-1 section-header text-center">
+          <div class="col">
+            <h2 class="section-title">
+              Features
+            </h2>
+          </div>
+          <div class="col">
+            <p class="section-description">
+              Our aim is to make it quick and easy for you to access your favourite websites.
+              Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+          </div>
+        </div>
+        <ul class="row tab-navigator-list list-none">
+          <li class="col tab-navigator-item">
+            <a href=" #simpleBookmark" class="tab-link active">Simple Bookmarking</a>
+          </li>
+          <li class="col tab-navigator-item">
+            <a href=" #speedySearch" class="tab-link">Speedy Searching</a>
+          </li>
+          <li class="col tab-navigator-item">
+            <a href=" #easyShare" class="tab-link">Easy Sharing</a>
+          </li>
+        </ul>
+        <div class="tabs">
+          <article class="tab active" id="simpleBookmark">
+            <div class="row gap-6">
+              <div class="col-12 col-md-6 tab-img-wrapper">
+                <img src="assets/images/illustration-features-tab-1.svg" alt="" class="tab-img">
+              </div>
+              <div class="tab-content col-12 col-md-6">
+                <h3 class="section-subtitle tab-title">
+                  Bookmark in one click
+                </h3>
+                <p class="section-description tab-description">
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <a href="" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </article>
+          <article class="tab" id="speedySearch">
+            <div class="row gap-6">
+              <div class="col-12 col-md-6 tab-img-wrapper">
+                <img src="assets/images/illustration-features-tab-2.svg" alt="" class="tab-img">
+              </div>
+              <div class="tab-content col-12 col-md-6">
+                <h3 class="section-subtitle tab-title">
+                  Intelligent search
+                </h3>
+                <p class="section-description tab-description">
+                  Our powerful search feature will help you find saved sites in no time at all.
+                  No need to trawl through all of your bookmarks.
+                </p>
+                <a href="" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </article>
+          <article class="tab" id="easyShare">
+            <div class="row gap-6">
+              <div class="col-12 col-md-6 tab-img-wrapper">
+                <img src="assets/images/illustration-features-tab-3.svg" alt="" class="tab-img">
+              </div>
+              <div class="tab-content col-12 col-md-6">
+                <h3 class="section-subtitle tab-title">
+                  Share your bookmarks
+                </h3>
+                <p class="section-description tab-description">
+                  Easily share your bookmarks and collections with others. Create a shareable
+                  link that you can send at the click of a button.
+                </p>
+                <a href="" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section platforms">
+      <div class="container">
+        <div class="row fx-column gap-1 align-center section-header text-center">
+          <div class="col">
+            <h2 class="section-title">
+              Download the extension
+            </h2>
+          </div>
+          <div class="col">
+            <p class="section-description">
+              We’ve got more browsers in the pipeline. Please do let us know if you’ve
+              got a favourite you’d like us to prioritize.
+            </p>
+          </div>
+        </div>
+        <div class="row gap-5 justify-center align-center platforms-card">
+          <article class="card">
+            <div class="card-body">
+              <img src="assets/images/logo-chrome.svg" alt="Chrome Icon" class="card-icon">
+              <h3 class="section-subtitle card-title">
+                Add to Chrome
+              </h3>
+              <p class="section-description card-note">
+                Minimum version 62
+              </p>
+            </div>
+            <img src="assets/images/bg-dots.svg" alt="" class="divider" aria-hidden="true">
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-lg">Add & Install Extension</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <img src="assets/images/logo-firefox.svg" alt="Firefox Icon" class="card-icon">
+              <h3 class="section-subtitle card-title">
+                Add to Firefox
+              </h3>
+              <p class="section-description card-note">
+                Minimum version 55
+              </p>
+            </div>
+            <img src="assets/images/bg-dots.svg" alt="" class="divider" aria-hidden="true">
+            <div class="card-footer"><a href="#" class="btn btn-primary btn-lg">Add & Install Extension</a></div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <img src="assets/images/logo-opera.svg" alt="Opera Icon" class="card-icon">
+              <h3 class="section-subtitle card-title">
+                Add to Opera
+              </h3>
+              <p class="section-description card-note">
+                Minimum version 46
+              </p>
+            </div>
+            <img src="assets/images/bg-dots.svg" alt="" class="divider" aria-hidden="true">
+            <div class="card-footer"><a href="#" class="btn btn-primary btn-lg">Add & Install Extension</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-faqs" id="faqs">
+      <div class="container">
+        <div class="row gap-1 fx-column align-center justify-center section-header text-center">
+          <div class="col">
+            <h2 class="section-title">
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div class="col">
+            <p class="section-description">
+              Here are some of our FAQs. If you have any other questions you’d like
+              answered please feel free to email us.
+            </p>
+          </div>
+        </div>
+        <div class="row fx-column faqs">
+          <article class="faq">
+            <div class="row justify-space-between align-center faq-header">
+              <h3 class="faq-title">
+                What is Bookmark?
+              </h3>
+              <button type="button" class="faq-opener">
+                <img src="assets/images/icon-arrow.svg" alt="FAQ Toggler">
+              </button>
+            </div>
+            <div class="faq-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </div>
+          </article>
+          <article class="faq">
+            <div class="row justify-space-between align-center faq-header">
+              <h3 class="faq-title">
+                How can I request a new browser?
+              </h3>
+              <button type="button" class="faq-opener">
+                <img src="assets/images/icon-arrow.svg" alt="FAQ Toggler">
+              </button>
+            </div>
+            <div class="faq-content">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </article>
+          <article class="faq">
+            <div class="row justify-space-between align-center faq-header">
+              <h3 class="faq-title">
+                Is there a mobile app?
+              </h3>
+              <button type="button" class="faq-opener">
+                <img src="assets/images/icon-arrow.svg" alt="FAQ Toggler">
+              </button>
+            </div>
+            <div class="faq-content">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </div>
+          </article>
+          <article class="faq">
+            <div class="row justify-space-between align-center faq-header">
+              <h3 class="faq-title">
+                What about other Chromium browsers?
+              </h3>
+              <button type="button" class="faq-opener">
+                <img src="assets/images/icon-arrow.svg" alt="FAQ Toggler">
+              </button>
+            </div>
+            <div class="faq-content">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </div>
+          </article>
+        </div>
+        <div class="row justify-center">
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta bg-primary text-light" id="contact">
+      <div class="container">
+        <div class="row gap-2 fx-column align-center justify-center cta-content">
+          <p class="cta-label text-uppercase">
+            35,000+ already joined
+          </p>
+          <h2 class="cta-title section-title">
+            Stay up-to-date with what we’re doing
+          </h2>
+          <form action="" class="row gap-2 newsletter-form">
+            <div class="input-group">
+              <input type="email" name="user_mail" id="user-mail" placeholder="Enter your email address">
+              <p class="message"></p>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-submit">
+              Contact Us
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-light">
+    <div class=" container">
+      <div class="grid">
+        <div class="g-item">
+          <a href="/" class="logo-link" aria-label="Bookmark Brand Logo">
+            <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                  fill="#fff" fill-rule="nonzero" />
+                <g>
+                  <circle fill="rgb(82, 103, 223)" cx="12.5" cy="12.5" r="12.5" />
+                  <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="g-item">
+          <nav class="nav-secondary">
+            <ul class="nav-list list-none">
+              <li class="nav-list-item"><a href="#features">Features</a></li>
+              <li class="nav-list-item"><a href="#faqs">Pricing</a></li>
+              <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="g-item">
+          <ul class="social-list list-none">
+            <li class="social-list-item">
+              <a href="#" aria-label="Go to Our Twitter Page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                  <path fill-rule="evenodd"
+                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" aria-label="Go to Our Facebook Page">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                  <path fill-rule="evenodd"
+                    d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

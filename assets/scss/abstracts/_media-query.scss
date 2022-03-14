@@ -1,0 +1,13 @@
+$beakpoint: (
+  sm: 40em,
+  md: 52.85em,
+  lg: 70em,
+);
+
+@mixin mq($key) {
+  $size: map-get($beakpoint, $key);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
